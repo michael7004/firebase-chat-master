@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/fragment_send_contact_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.crazyhitty.chdev.ks.firebasechatModule.custom.CircleImageView
+                android:id="@+id/fragment_send_contact_iv_profile"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_option_menu"
+                app:civ_fill_color="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/fragment_send_contact_tv_email_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.7"
+                android:text="emial@gmail.com" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_send_contact_s_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_send_contact_ll"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.crazyhitty.chdev.ks.firebasechatModule.custom.CircleImageView
+                android:id="@+id/fragment_send_contact_iv_email_box"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_option_menu"
+                app:civ_fill_color="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/fragment_send_contact_tv_email_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="emial@gmail.com" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_send_contact_s_ll"
+        android:layout_marginTop="5dp"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <com.crazyhitty.chdev.ks.firebasechatModule.custom.CircleImageView
+            android:id="@+id/fragment_send_contact_iv_send"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_send_black_24dp"
+            app:civ_fill_color="@color/colorAccent" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
